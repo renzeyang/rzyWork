@@ -1,0 +1,18 @@
+<ul>
+	<li ng-repeat="a in data">
+		<input type="checkbox" class="check" ng-click="che(a)">
+		<div id="pic">
+			<img ng-src="{{a.img}}" alt="">
+		</div>
+		<div id="text">
+			<div id="name">{{a.name}}</div>
+			<div id="price">单价：<span>{{a.price}}万</span></div>
+			<div id="num">总结：<span>{{a.num}}万</span></div>
+		</div>
+		<div id="jsq">
+			<div class="jia" ng-click="fn1(a)">+</div>
+			<div id="input">{{a.value}}</div>
+			<div class="jian" ng-click="fn2(a)">-</div>
+		</div>
+	</li>
+</ul>
